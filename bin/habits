@@ -1,0 +1,13 @@
+#!/usr/bin/env python3
+"""Thin launcher so this project can be run as `bin/habits <command>` with no install."""
+
+import os
+import sys
+
+SRC = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "src")
+sys.path.insert(0, SRC)
+
+from habittracker.cli import main  # noqa: E402
+
+if __name__ == "__main__":
+    sys.exit(main())

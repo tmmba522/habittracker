@@ -1,0 +1,3 @@
+"""Command-line habit tracker."""
+
+__version__ = "1.0.0"
